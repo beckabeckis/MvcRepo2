@@ -651,6 +651,96 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/App-Dice-DiceHand.html#property_hand"
         },                {
+            "fqsen": "\\App\\Entity\\Library",
+            "name": "Library",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_getId"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_getTitle"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AsetTitle\u0028\u0029",
+            "name": "setTitle",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_setTitle"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AgetIsbn\u0028\u0029",
+            "name": "getIsbn",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_getIsbn"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AsetIsbn\u0028\u0029",
+            "name": "setIsbn",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_setIsbn"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AgetAuthor\u0028\u0029",
+            "name": "getAuthor",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_getAuthor"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AsetAuthor\u0028\u0029",
+            "name": "setAuthor",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_setAuthor"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AgetImgLink\u0028\u0029",
+            "name": "getImgLink",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_getImgLink"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AsetImgLink\u0028\u0029",
+            "name": "setImgLink",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_setImgLink"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AgetDetails\u0028\u0029",
+            "name": "getDetails",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_getDetails"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003AsetDetails\u0028\u0029",
+            "name": "setDetails",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#method_setDetails"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#property_id"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#property_title"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003A\u0024isbn",
+            "name": "isbn",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#property_isbn"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003A\u0024author",
+            "name": "author",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#property_author"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003A\u0024imgLink",
+            "name": "imgLink",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#property_imgLink"
+        },                {
+            "fqsen": "\\App\\Entity\\Library\u003A\u003A\u0024details",
+            "name": "details",
+            "summary": "",
+            "url": "classes/App-Entity-Library.html#property_details"
+        },                {
             "fqsen": "\\App\\Kernel",
             "name": "Kernel",
             "summary": "",
@@ -696,6 +786,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/App-Project-Table.html#property_table"
         },                {
+            "fqsen": "\\App\\Repository\\LibraryRepository",
+            "name": "LibraryRepository",
+            "summary": "",
+            "url": "classes/App-Repository-LibraryRepository.html"
+        },                {
+            "fqsen": "\\App\\Repository\\LibraryRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/App-Repository-LibraryRepository.html#method___construct"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -716,6 +816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/app-dice.html"
         },                {
+            "fqsen": "\\App\\Entity",
+            "name": "Entity",
+            "summary": "",
+            "url": "namespaces/app-entity.html"
+        },                {
             "fqsen": "\\App",
             "name": "App",
             "summary": "",
@@ -725,5 +830,10 @@ Search.appendIndex(
             "name": "Project",
             "summary": "",
             "url": "namespaces/app-project.html"
+        },                {
+            "fqsen": "\\App\\Repository",
+            "name": "Repository",
+            "summary": "",
+            "url": "namespaces/app-repository.html"
         }            ]
 );

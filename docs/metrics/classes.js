@@ -1300,7 +1300,7 @@ var classes = [
         "afferentCoupling": 2,
         "efferentCoupling": 1,
         "instability": 0.33,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 1,
         "violations": {}
     },
     {
@@ -1414,7 +1414,7 @@ var classes = [
         "afferentCoupling": 1,
         "efferentCoupling": 2,
         "instability": 0.67,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 4,
         "violations": {}
     },
     {
@@ -1494,7 +1494,7 @@ var classes = [
         "afferentCoupling": 3,
         "efferentCoupling": 0,
         "instability": 0,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 2,
         "violations": {}
     },
     {
@@ -1603,7 +1603,7 @@ var classes = [
         "afferentCoupling": 2,
         "efferentCoupling": 0,
         "instability": 0,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 6,
         "violations": {}
     },
     {
@@ -1876,7 +1876,7 @@ var classes = [
         "afferentCoupling": 7,
         "efferentCoupling": 1,
         "instability": 0.13,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 6,
         "violations": {}
     },
     {
@@ -1953,7 +1953,7 @@ var classes = [
         "afferentCoupling": 2,
         "efferentCoupling": 1,
         "instability": 0.33,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 4,
         "violations": {}
     },
     {
@@ -2039,7 +2039,7 @@ var classes = [
         "afferentCoupling": 4,
         "efferentCoupling": 1,
         "instability": 0.2,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 4,
         "violations": {}
     },
     {
@@ -2118,7 +2118,7 @@ var classes = [
         "afferentCoupling": 3,
         "efferentCoupling": 1,
         "instability": 0.25,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 32,
         "violations": {}
     },
     {
@@ -2210,7 +2210,7 @@ var classes = [
         "afferentCoupling": 2,
         "efferentCoupling": 2,
         "instability": 0.5,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 4,
         "violations": {}
     },
     {
@@ -2288,7 +2288,7 @@ var classes = [
         "afferentCoupling": 1,
         "efferentCoupling": 0,
         "instability": 0,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 2,
         "violations": {}
     },
     {
@@ -2384,7 +2384,7 @@ var classes = [
         "afferentCoupling": 2,
         "efferentCoupling": 1,
         "instability": 0.33,
-        "numberOfUnitTests": 0,
+        "numberOfUnitTests": 4,
         "violations": {}
     }
 ]
