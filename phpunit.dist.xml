@@ -18,12 +18,12 @@
     </php>
 
     <testsuites>
-        <testsuite name="Project Test Suite">
+        <testsuite name="project">
             <directory>tests</directory>
         </testsuite>
-        <!-- <testsuite name="scrutinizer">
+        <testsuite name="scrutinizer">
             <directory>testsscrut</directory>
-        </testsuite> -->
+        </testsuite>
     </testsuites>
 
     <source ignoreSuppressionOfDeprecations="true"

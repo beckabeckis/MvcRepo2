@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1749204778">
-  <project timestamp="1749204778" name="Clover Coverage">
+<coverage generated="1749207596">
+  <project timestamp="1749207596" name="Clover Coverage">
     <package name="App\Card">
       <file name="/home/rebec/dbwebb-kurser/mvc/me/report/src/Card/BankCardHand.php">
         <class name="App\Card\BankCardHand" namespace="App\Card">
@@ -74,14 +74,14 @@
         <line num="47" type="stmt" count="30"/>
         <line num="49" type="stmt" count="30"/>
         <line num="50" type="stmt" count="30"/>
-        <line num="51" type="stmt" count="19"/>
-        <line num="52" type="stmt" count="19"/>
-        <line num="53" type="stmt" count="26"/>
-        <line num="54" type="stmt" count="21"/>
-        <line num="55" type="stmt" count="21"/>
+        <line num="51" type="stmt" count="21"/>
+        <line num="52" type="stmt" count="21"/>
+        <line num="53" type="stmt" count="25"/>
+        <line num="54" type="stmt" count="20"/>
+        <line num="55" type="stmt" count="20"/>
         <line num="56" type="stmt" count="23"/>
-        <line num="57" type="stmt" count="19"/>
-        <line num="58" type="stmt" count="19"/>
+        <line num="57" type="stmt" count="20"/>
+        <line num="58" type="stmt" count="20"/>
         <line num="59" type="stmt" count="20"/>
         <line num="60" type="stmt" count="20"/>
         <line num="61" type="stmt" count="20"/>
