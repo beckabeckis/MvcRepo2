@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Card deck{% endblock %}
+
+{% block body %}
+    <h1>Card deck</h1>
+
+    {% for card in deck %}
+        <p class="card">{{ card}}</p>
+    {% endfor %}
+
+{% endblock %}

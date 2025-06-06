@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Card draw{% endblock %}
+
+{% block body %}
+    <h1>Card draw</h1>
+
+    {% for card in hand %}
+        <p class="card">{{ card }}</p>
+    {% endfor %}
+
+    <p class="cards-left">Number of cards left in the deck: {{ numOfCards }}.</p>
+
+    {{ include('flash.html.twig') }}
+{% endblock %}

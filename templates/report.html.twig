@@ -1,0 +1,254 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <header>
+        <h1>Redovisning av kursmoment i kursen MVC</h1>
+    </header>
+
+    <section id="kmom01">
+        <h2>kmom01</h2>
+        <p>
+            Jag har förra året gått er kurs om objektorienterad pyhton där jag lärde mig mycket om objektorienterad 
+            programmering. Jag har även gått några andra kurser tidigare som har intruducerat ämnet, däribland C# 
+            intruduktion som handlade mycket om det. Jag känner mig ganska säker kring klasser och metoder men tror 
+            att det fortfarande finns mycket att lära sig.
+        </p>
+        <p>
+            Man behöver veta syntaxen som PHP har för att bygga upp objekt och klasser, vilket verkar vara väldigt 
+            likanade andra programmeringsspråks syntax. Man behöver förstå skullnaden av ett objekt och en klass. 
+            En klass är själva 'modellen' som ett objekt skapas ifrån. En klass bestämmer vilka metoder och liknande 
+            ett objekt ska ha, och för varje objekt som man skapar så kan man olika parametrar för att göra objektet 
+            anpassat till vad man behöver.
+        </p>
+        <p>
+            Detta är ett helt nytt ramverk för mig, men man kan se likheter i strukturen i symfony och andra ramverk 
+            jag har jobbat med innan. Det är mycket nytt och nog det mest komplicerade ramverkat jag har jobbat med, 
+            men när man lär sig var man lägger html filer, bilder, css och liknanade så blir det lättare att jobba med 
+            den. Jag tykcer att det är kul att lära sig och upp till en viss grad så ju mer kolicerade ramverk ju mer 
+            möjligheter finns det för projektet.
+        </p>
+        <p>
+            Allting verkar ju väldigt bra att de har tagit med men om det är några saker som jag skulle vilja lyfta 
+            fram så är det 'Documenting your Code' och 'Security'. Att lära sig dokumentera sin kod tycker jag är väldigt 
+            viktigt, specciellt när man jobbar med andra men även för sig själv i framtiden, och det är något som jag 
+            skulle vilja lära mig göra bättre. Säkerhet blir vikitigare och viktigare i dagens samhälle och det är något 
+            som jag känner att jag inte kan så bra än men vill gärna bli väldigt bra på.
+        </p>
+        <p>
+            Jag har lärt mig väldigt mycket nytt denna veckan, men mitt TIL för denna kmom blir att jag har märkt att jag 
+            har mycket bättre koll på filsystemet och hur saker hänger ihop, specciellt i ett mer komplicerat ramverk som symfony.
+        </p>
+    </section>
+    <section id="kmom02">
+        <h2>kmom02</h2>
+        <p>
+            En klass kan ärva från en annan klass, det innebär att den kan använda sig av samma konstruktor och ärver 
+            alla metoder från den klassen och kan lägga till egna metoder som är specefika för den ärvande klassen. 
+            Komposition är en realation mellan två klasser där den ena klassen är starkt beroende av den andra klassen, 
+            det finns även en typ av komposition som kalla aggregat där kopplingen inte är lika stark. 
+            Ett interface kan användas för att visa vilka metoder som klasser som är kopplade till interfacet kommer 
+            att ha, det är lite som en 'kontrakt' för vilka metoder klasserna måste ha.
+            Ett trait är som en klass med metoder som man kan koppla till flera riktiga klasser och klasser kan ha flera 
+            traits. Om en klass använder ett trait så får den de metoder som traitet har.
+        </p>
+        <p>
+            Jag använde mig av en Card klass som skapar objekt av kort, en CardGraphic klass som ärver från Cardklassen men 
+            dess kort är mer grafiska än Card klassens. Sedan har jag en klass DeckOfCards som skapar ett Card objekt för varje kort 
+            i en kortlek och en CardHand klass som använder sig av ett objekt av DeckOfCards klassen för att dra kort från den.
+            Routerna använder sig sedan av klasserna för att få fram den logik som de behöver. DeckOfCards klassen har en metod för att få fram 
+            korten i ordning och en för att få fram korten shufflade. Jag blev väldigt nöjd med min lösning och känner att jag har fått 
+            med alla funktioner jag vill ha med. Jag kände inte att jag hade tid för de optionella uppgifterna så hade kunnat förbättras 
+            av att implementera de med, annars är jag väldigt nöjd.
+        </p>
+        <p>
+            Det mer lättare och lättare att förstå hur symfony fugnerar och hur filsystemet ör uppbyggt. Det är kul att jobba 
+            med det då det är lite mer komplicerat och det finns mycket funktioner och liknande man kan få in då.
+        </p>
+        <p>
+            Denna veckan är mitt TIL traits. Det känns som en väldigt samrt sak att ha, gör att koden kan bli ännu mera DRY.
+        </p>
+    </section>
+    <section id="kmom03">
+        <h2>kmom03</h2>
+        <p>
+            Det var ett bra sätt att förbereda sig på, jag kände att det var lättare att oraganisera tankarna 
+            och få ihop hela strukturen utan att behöva göra massa detaljer först. Man får en väldigt bra överblick.
+        </p>
+
+        <p>
+            Jag är faktiskt väldigt nöjd med min implementation, jag känner att jag fick in alla funtioner som 
+            skulle med och att jag löste det utan att vara för komplicerad och använda mig av de metoder om redan fanns.
+        </p>
+
+        <p>
+            Jag gjorde en klass för att hantera player handen och en för bank handen, som båda ärvde fårn CardHand, och 
+            skrev metoder som passar vad de ska göra. Jag gjorde en router där man kan se information om spelet och 
+            starta ett nytt spel. När man trycket på att starta ett nytt spel så kommer man till en router som visar 
+            spelplanen och har en knapp som drar ett kort, men inte mer komplicerat än så. Dra kort knappen tar en till 
+            en mer komplicerad router som hämtar ett nytt kort, kollar om man har fått ett ess eller inte och om man har 
+            fått över 21 eller inte och lägger till data för att visa poäng och spelkort för spelaren och banken.
+        </p>
+
+        <p>
+            Om man har fått ett ess så visas två knappar, ett eller tretton, som tar en till en en router som lägger till ett i 
+            poängen respktive en router som lägger tretton i poängen. Om man har fått över 21 läggs ett "Du förlorade!" 
+            medellande till i flash och 'dra' och 'avsluta' knapparna göms och en 'spela igen knapp syns'. Om man fick exakt 21
+            så visas "Du vann!" istället. När man vänljer att avsluta ronden spelar banken sina kort likt spelaren men mer 
+            automatiskt och sedan jämförs poängen för att se om spelaren har förlorat eller inte!
+        </p>
+
+        <p>
+            Det känns bra att koda i Symphony, jag förstår mer och mer och det är kul att lära sig hur man kan göra sin egen lint.
+        </p>
+
+        <p>
+            Mitt TIL för denna veckan får nog bli just hur man gör sin egna lint. Tycker att det är kul att lära sig efter att 
+            man har använt eran så länge utan att riktigt veta hur det fungerar. Det känns som att man blir mer och mer reso 
+            att göra sitt egna projekt.
+        </p>
+
+
+    </section>
+    <section id="kmom04">
+        <h2>kmom04</h2>
+        <p>
+            Jag tyckte att PHPUnit är ett väldigt bra verktyg för att testa sin kod. Förra året testade jag på enhetstestning 
+            på php kursen och nu kändes det som att man gick ett steg till med detta verktyg, det är alltid roligt att utveckla 
+            sina kunskaper.
+        </p>
+        <p>
+            Jag lyckades bra med min kodtäckning, jag lyckades få 100% på all kod i Card klasserna och jag försökte även få 
+            bra tester även om det redan var "täckt". Jag kan tänka mig att det alltid finns saker som man kan förbättra, känner 
+            mig forfarande rätt ny i ämnet, men är nöjd med min kod just nu. Jag skrev om min kod lite, när jag skulle testa 
+            metoder som använder sig av random värden så la jag till en optionell parameter för att kunna styra vad metoden 
+            skulle returnera så att den blev lättare att testa.
+        </p>
+        <p>
+            Det känns som att om kod är lätt att testa så borde den vara mer organiserad och genomtänkt, vilket kan leda 
+            till att den blir snyggare och renare, även om det inte är det ändå som behövs.
+        </p>
+        <p>
+            Mitt TIL denna vecka är phpDoc, Jag tycker att det är ett väldigt bra sätt att ha överblick lver sitt projekt.
+        </p>
+
+
+    </section>
+    <section id="kmom05">
+        <h2>kmom05</h2>
+        <p>
+            Det gick för det mesta bra med att jobba med doctrine, det vart en hel del småfel som var kluriga att förstå men 
+            allt gick tillslut att lösa. Utan alla småfel (som att jag behövde uppdatera och installera vissa saker) så hade 
+            allt defenetivt gått mycket snabbare och lättare, men när jag hade kommit igenom artiklen så tycker jag att det är 
+            ett väldigt bra sätt att jobba på och inte så komplicerat men ända väldigt organiserat.
+        </p>
+        <p>
+            Jag försökte då en bra användarupplevelse när jag gjorde användargränssnittet, så att det skulle kännas naturligt 
+            med länkar och vart man kom efter man t.ex. har lagt till en ny bok eller uppdaterat en.
+        </p>
+        <p>
+            Vi har ju gjort en liknande applikation med CRUD innan så jag försökte ha det tänket så den delen var inte så svår, 
+            det var svårare att göra det med doctrin och ORM då jag inte kan det så bra än, men jag har verkligen lärt mig mycket 
+            och ju mer jag har jobbade med det ju mer förstod jag.
+        </p>
+        <p>
+            Jag tycker om a tt jobba med ORM, det känns som ett mer strukturerat sätt att jobba med allt och mycket mer automatisk 
+            och enkelt när man väl har förstått sig på det. Det kankse inte är riktigt lika enkelt och överskådligt till en början 
+            som om man skriver egna filer och jag känner att det är mycket med ORM som jag inte vet än och vilka funtioner den har 
+            så är svårt att säga om den har alla funktioner som man kan ha när man skriver egna filer.
+        </p>
+        <p>
+            Mitt TIL för denna vecka är att jag även har förstått mig på twig ännu bättre och dess variblar och länkar fugnerar.
+        </p>
+
+    </section>
+    <section id="kmom06">
+        <h2>kmom06</h2>
+        <p>
+            PhpMetrics är ett bra verktyg för att kunna se en bra överblick på många olika aspekter inom clean code. 
+            Den visade en bra översikt över complexitet och vilka klasser man kan fokusera mer på för att få ner komplexiteten.
+        </p>
+        <p>
+            Det var rätt svårt att komma igång med Scrutinizer då det var en del fel i konfigrationen som tog lite tid att hitta. 
+            Men när man väl passerat alla tester så tyckte jag att den visade en väldigt och tydlig överiskt och det var lätt att 
+            se vilka issues man hade och den visade bra information om kodtäckning, komplexitet, CRAP score och annat. Min första 
+            kodtäckning var bara 19% men jag hade A som betyg på alla klasser och 10/10 på allt.
+        </p>
+        <p>
+            Jag tror att sådana här verktyg hjälper med kodkvaliteten väldigt mycket då man får en väldigt bra överblick på t.ex. 
+            kodtäckning och komplexitet och det visar tydligt var och hur man kan förbättra sin kod. Om man lyckas få sin kod till 
+            'perfekta' värden så tror jag att man lyckats få en bra kodkvalitet men det är viktigt att inte lite helt blint utan 
+            även förstå vad clean code innebär och vad bra kod är. Detta är nog speciellt viktigt med kodtäckning eftersom det är 
+            svårt att mäta kvaliteten på testerna.
+        </p>
+        <p>
+            Mitt TIL för denna vecka är att jag har fått ännu bättre förståelse för alla filer i projektet då jag hade väldigt 
+            mycket problem som jag har fick lösa genom att kolla mycket online efter hur olika filer fugnerar och vad de gör.
+        </p>
+    </section>
+    <section id="kmom10">
+        <h2>kmom10</h2>
+        <h3>1.</h3>
+        <h4>Krav 1-3</h3>
+        <p>
+            Jag har valt att göra en implementation av kortspelet Poker Squares. Jag har börjat med att göra en klass med namn 
+            Tables för att kunna spara vad alla positioner i spelet innehåller, antingen är det null eller så innehåller det en 
+            instans av ett CardGraphic. Detta sparas i ett field värde som är en 2D array. En array i arrayen för varje rad. 
+            Sedan finns det metoder för att bland annat lägga till ett kort i en position, kolla om alla positioner är fyllda 
+            och räkna ut slut poängen.
+        </p>
+        <p>
+            Sedan har jag gjort en route för /proj som skapar en ny instans av Table och DeckOfCards klasserna och spara de i 
+            sessionen. På twig sidan beskrivs hur spelet fungerar och visar en tabell över poängsystemen samt så finns en knapp 
+            för att starta spelet och ta en till routern /proj/square_board. Där hämtas Table och DeckOfCards instanserna från 
+            sessionen och hämtar ett random kort från decken och 2D arrayen från table. På twig sidan visas kortet som ska läggas 
+            ut och alla korten från arrayen i ett 5x5 rutnät, om positionen har ett kort i sig så visas kortet men om det är null 
+            så görs ett form som skcikar med positionen och valören och färgen på kortet som ska läggas ut i hidden inputs som vid 
+            tryckning skickas genom en post route som lägger till kortet i table, kollar om table är fullt och sedan skickar en 
+            vidare. Om table är inte är full så skickas man tillbaka annars så skickas man till routen /proj/square_board_finish 
+            där metoden för att räkna ut poängen och om man har fått tillräckligt poäng för att vinna (både genom den amerikanska 
+            och engelska poängsystemen) vilket tillsammans med alla kort visas på twig sidan.
+        </p>
+        <p>
+            Jag har ändrat färgschemat och fonterna på sidorna som har med projektet att göra till att passa mer till en 
+            kortspelssida. Jag har valt den klassiska emeraldgröna färgen som passar till temat och en header bild som har 
+            lite mörkare drag som jag också tyckte passar bra. Det är en lite ’finare’ mer klassisk font till header titeln 
+            som syns mer och jag har även ändrat fonterna på rubriker och brödtext för att passa. När man trycker på 
+            menyvalet ’projekt’ så ändras menyn till att bara visa de val som har med projektet att göra och ett menyval ’home’ 
+            för att komma tillbaka till startsidan och se de andra menyvalen.
+        </p>
+        <p>
+            Jag har även gjort en route /proj/about som kort beskriver hur jag har implmenterat spelet. Jag har även uppdaterat 
+            min README.md fil för att skriva lite mer varför repot finns och vad den innehåller.
+        </p>
+        <p>
+            Jag har även skrivit enhetstester för de klasser och controllers som jag har gjort till projektet och med phpunit 
+            så når de berörda testerna 100% kodtäckning. Jag har även genretat dokumentation med phpdoc och genererat metrics 
+            med phpmetrics.
+        </p>
+        <h4>Krav 4</h3>
+        <p>
+            Jag har skapat 6 stycken JSON API routes till projektet. En som visar de kort som är kvar i decken, en som visar 
+            alla positioner i table, en som visar alla positioner i table fast omgjort till kortens string i stället för 
+            instansen av kort klassen, en som visar om 2d arrayen är full eller inte, en som visar poängen och om man har 
+            vunnit (endast om 2d arrayen är fylld) och en api som tar bort allt i sessionen. Alla länkar till apierna finns 
+            på landningsrouten /proj/api.
+        </p>
+        <h3>2.</h3>
+        <p>
+            Det gick okej att genomföra projektet. Denna kurs hann jag tyvärr inte göra alla krav men jag känner att jag 
+            löste själva kortspelsdelen väldigt bra. Det var en del problem som tog lite tid att lösa och det som var mest 
+            jobbigt med hela projektet var att få Scrutinizer att fungera. Jag tror egentligen att hela projektet var rimligt 
+            med omfattning och tid men jag har inte mått så bra sista delen av kursen så jag har inte haft energi nog att nå 
+            de högre kraven, men jag är glad att klara av kursen i alla fall och får nöja mig med ett lägre betyg.
+        </p>
+        <h3>3.</h3>
+        <p>
+            Jag tycker att det var en bra kurs och jag tror det är viktigt att lära sig dem här sakerna. Det känns som att man 
+            knöt ihop alla kunskaper genom åren och fick lära sig mycket mer hur man skapar ett eget projekt. Det ända var att 
+            det ibland var lite röriga instruktioner, men min trötta hjärna kan ha bidragit till den uppfattnignen. Jag är överlag 
+            nöjd och skulle rekommendera kursen till vänner, 9/10!
+        </p>
+    </section>
+{% endblock %}

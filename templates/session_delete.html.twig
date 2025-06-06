@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <h1>Session Deleted</h1>
+    <p>CardHand: {{ dump(cardHand) }}</p>
+
+    {{ include('flash.html.twig') }}
+{% endblock %}
