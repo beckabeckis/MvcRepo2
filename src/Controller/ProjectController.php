@@ -32,7 +32,7 @@ class ProjectController extends AbstractController
         return $this->render('project/square_init.html.twig');
     }
 
-    #[Route("/proj/square_board", name: "square_board")]
+    #[Route("/proj/square_board", name: "square_board", methods: ['GET'])]
     public function squareBoard(
         SessionInterface $session
     ): Response {
@@ -57,7 +57,7 @@ class ProjectController extends AbstractController
         return $this->render('project/square_board.html.twig', $data);
     }
 
-    #[Route("/proj/square_board_post", name: "square_board_post", methods: ['POST'])]
+    #[Route("/proj/square_board", name: "square_board_post", methods: ['POST'])]
     public function squareBoardPost(
         SessionInterface $session,
         Request $request
@@ -144,9 +144,9 @@ class ProjectController extends AbstractController
         $session->set("table", $table);
 
         if ($table->checkIfFull()) {
-            return $this->redirect('/proj/square_board_finished');
+            return $this->redirect('square_board_finished');
         }
-        return $this->redirect('/proj/square_board');
+        return $this->redirect('square_board');
     }
 
     #[Route("/proj/square_board_finished", name: "square_board_finished")]
