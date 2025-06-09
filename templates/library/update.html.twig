@@ -7,7 +7,7 @@
 
 <h1>Uppdatera bok</h1>
 
-<form method="post" action="/library/update">
+<form method="post" action="{{path ('library_update_post') }}">
     <lable for="title">Titel:</lable>
     <br>
     <input type="text" name="title" id="title" value="{{ book.getTitle|e }}"/>

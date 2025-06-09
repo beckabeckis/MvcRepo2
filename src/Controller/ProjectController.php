@@ -144,9 +144,9 @@ class ProjectController extends AbstractController
         $session->set("table", $table);
 
         if ($table->checkIfFull()) {
-            return $this->redirect('square_board_finished');
+            return $this->redirectToRoute('square_board_finished');
         }
-        return $this->redirect('square_board');
+        return $this->redirectToRoute('square_board');
     }
 
     #[Route("/proj/square_board_finished", name: "square_board_finished")]

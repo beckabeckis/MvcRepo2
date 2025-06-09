@@ -63,7 +63,7 @@ class ProjectControllerTest extends WebTestCase
         ];
         $client = static::createClient();
         $client->request('GET', '/proj');
-        $client->request('POST', '/proj/square_board_post', $postData);
+        $client->request('POST', '/proj/square_board', $postData);
 
         $this->assertResponseRedirects('/proj/square_board');
     }
@@ -82,7 +82,7 @@ class ProjectControllerTest extends WebTestCase
         ];
         $client = static::createClient();
         $client->request('GET', '/proj');
-        $client->request('POST', '/proj/square_board_post', $postData);
+        $client->request('POST', '/proj/square_board', $postData);
 
         $this->assertResponseRedirects('/proj/square_board_finished');
     }

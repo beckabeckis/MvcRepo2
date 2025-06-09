@@ -154,10 +154,10 @@ final class LibraryController extends AbstractController
 
         $entityManager->flush();
 
-        return $this->redirect('/library/book/'.$id);
+        return $this->redirectToRoute('library_read_many');
     }
 
-    #[Route('/library/view', name: 'library_read_many')]
+    #[Route('/library/view', name: 'library_read_many', methods: ['GET'])]
     public function viewAllProduct(
         LibraryRepository $libraryRepository
     ): Response {

@@ -19,7 +19,7 @@
     <div class="bookDetails">
         <p>{{ book.getDetails|e }}</p>
     </div>
-    <a class="button" href="/library/update/{{ book.Id|e }}">Uppdatera bok</a>
+    <a class="button" href="{{ path('library_update', { 'id': book.Id|e }) }}">Uppdatera bok</a>
 </div>
 
 {% endblock %}

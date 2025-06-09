@@ -10,25 +10,25 @@
 {% set imgLink = book.getImgLink|e %}
 <div class="onebookSmall">
     <div class="bookImgSmall">
-        <a href="/library/book/{{ book.getId|e }}">
+        <a href="{{ path('library_read_one', { 'id': book.getId|e }) }}">
             <img src="{{ asset('img/library/' ~ imgLink ~ '') }}" width="200px" alt="{{ book.getTitle|e }}">
         </a>
     </div>
     <div class="bookTitle">
-        <a href="/library/book/{{ book.getId|e }}">
+        <a href="{{ path('library_read_one', { 'id': book.Id|e }) }}">
             <h2>{{ book.getTitle|e }}</h2>
         </a>
         <p>{{ book.getAuthor|e }}</p>
     </div>
     <div class="smallPadding">
-        <a href="/library/delete/{{ book.getId|e }}">
+        <a href="{{ path('library_delete', { 'id': book.Id|e }) }}">
             <img src="{{ asset('img/trash_icon.png') }}" alt="Delete" width="30px">
         </a>
     </div>
 </div>
 <hr class="smallPadding">
 {% endfor %}
-<a class="button" href="/library/create" width="100%">Lägg till ny bok</a>
+<a class="button" href="{{ path('library_create') }}" width="100%">Lägg till ny bok</a>
 
 
 
